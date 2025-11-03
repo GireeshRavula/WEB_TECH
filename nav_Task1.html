@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial;
+            font-size: 10px;
+            height: 75px;
+            background-color: black;
+            color: white;
+        }
+        .left{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            width: 20%;
+        }
+        .left-logo{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: grey;
+        }
+        .right{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 25%;
+        }
+        button{
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            border-radius: 3px;
+            padding-left:10px ;
+            padding-right:10px ;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        input{
+            padding-left:10px ;
+            padding-right:10px ;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="left">
+            <h2>Brand</h2>
+            <h2>Home</h2>
+            <h2 style="color: grey;">About</h2>
+            <h2 style="color: grey;">Product</h2>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+</body>
+</html>
