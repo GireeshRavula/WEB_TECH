@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-Ball</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 500px;
+        }
+        .ball{
+            height: 200px;
+            width: 200px;
+            animation: bounce 3s linear infinite;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateY(0) scale(0.5);
+            }
+            50%{
+                transform: translateY(400px) scale(1.2) skew(20deg,30deg) rotate(300deg);
+            }
+            100%{
+                transform: translateY(0) scale(0.5);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ball">
+        <img height="200px" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAkb5UaVD3GXW6Ix9v3txi2ltb1Wv5IDoMkQ&s" alt="">
+    </div>
+</body>
+</html>
