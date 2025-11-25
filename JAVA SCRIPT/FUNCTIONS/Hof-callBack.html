@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // The function whixh is passed as argument to another function is Call-back Function
+
+    function greet(){
+      console.log('This is Call Back Function');
+      
+    }
+    // The function that take another function as argument is called Higher Order Function
+    function Hof(callBack){
+      console.log("This is Higher Order Function");
+      callBack();
+    }
+    Hof(greet);
+  </script>
+</body>
+</html>
