@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch Case</title>
+</head>
+<body>
+  <script>
+    /*
+    let today = new Date();
+    let day = 9
+    switch(day){
+      case 0:
+        console.log('Sunday');
+        break;
+      case 1:
+        console.log('Monday');
+        break;
+      case 5:
+        console.log('Friday');
+        break;
+      default:
+        console.log('Invalid'); 
+    }
+        */
+    let today = new Date().getDay();
+    let amount = 1000;
+    let finalAmount;
+    switch(today){
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+        finalAmount = amount - (amount *0.10);
+        console.log('Weekends Discount applied(10%)');
+        break;
+      default:
+        console.log('Invalid Day');   
+    }
+  </script>
+</body>
+</html>
+
